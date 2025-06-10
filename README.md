@@ -30,8 +30,9 @@ This project demonstrates clean architecture, timezone handling, and core backen
 
 ### 1. Clone the repository or extract the zip
 
-```bash git clone https://github.com/laxmikantbhale/fitness-booking-api.git
-cd fitness_booking_app
+```bash
+git clone https://github.com/laxmikantbhale/fitness-booking-api.git
+cd fitness-booking-api
 ```
 
 ### 2. Create and activate virtual environment

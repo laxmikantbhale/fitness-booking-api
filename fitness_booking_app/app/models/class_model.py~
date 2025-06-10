@@ -1,0 +1,11 @@
+from sqlalchemy import Column, Integer, String, DateTime
+from fitness_booking.db import Base
+
+class FitnessClass(Base):
+    __tablename__ = "classes"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String)
+    instructor = Column(String)
+    datetime = Column(DateTime)
+    available_slots = Column(Integer)

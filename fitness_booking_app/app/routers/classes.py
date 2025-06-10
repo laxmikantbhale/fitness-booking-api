@@ -6,7 +6,7 @@ from app.db import SessionLocal
 from app.schemas.class_schema import ClassCreate, ClassOut
 from app.services import class_service
 
-router = APIRouter(prefix="/classes", tags=["Classes"])
+router = APIRouter(tags=["Classes"])
 
 def get_db():
     db = SessionLocal()
@@ -17,7 +17,7 @@ def get_db():
 
 
 
-@router.get("/", response_model=List[ClassOut])
+@router.get("/classes", response_model=List[ClassOut])
 def list_classes(
     timezone: str = Query(
         default="Asia/Kolkata",
